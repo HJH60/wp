@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡佳慧的自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>胡佳慧</h1>
+        <p>一個簡短的自我介紹</p>
+    </header>
+
+    <section>
+        <h2>關於我</h2>
+        <p>你好！我是胡佳慧，一位學生。對於[你的專業領域]充滿熱情，並且不斷追求學習與成長。</p>
+    </section>
+
+    <section>
+        <h2>我的技能</h2>
+        <p>我擁有豐富的[你的技能]，並且善於[你的特長或技能的應用場景]。在工作中，我常常運用[技能]來[達成什麼目標]。</p>
+    </section>
+
+    <section>
+        <h2>工作經歷</h2>
+        <p>[最近的工作經歷] - [工作內容和職責]</p>
+        <p>[之前的工作經歷] - [工作內容和職責]</p>
+    </section>
+
+    <section>
+        <h2>教育背景</h2>
+        <p>[你的學歷] - [學校名稱] - [主修或專業]</p>
+    </section>
+
+    <footer>
+        <p>聯絡方式：[你的聯絡方式]</p>
+    </footer>
+
+</body>
+
+</html>
