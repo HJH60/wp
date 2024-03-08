@@ -22,22 +22,23 @@
   <label for="favourite_colour">Favourite Colour:</label><br>
   <input type="color" id="favourite_colour" name="favourite_colour"><br>
   <label for="blood_type">Blood Type:</label><br>
-  <input type="select" id="blood_type" name="blood_type"><br>
+  <select name="blood_type" id="blood_type">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="O">O</option>
+    <option value="AB">AB</option>
+  </select><br>
   <label for="tel">Tel:</label><br>
   <input type="tel" id="tel" name="tel"><br>
 
   <label for="appendix">Appendix:</label><br>
   <input type="file" id="appendix" name="appendix"><br>
   <label for="introduction">Self introduction:</label><br>
-  <input type="textarea" id="introduction" name="introduction"><br>
+  <textarea name="introduction" rows="10" cols="30" placeholder="I am....."></textarea><br>
   <input type="checkbox" id="subscription" name="subscription">
   <label for="subscription">Subscription our news</label><br>
   <br>
   <input type="submit" value="Submit">
 </form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
 </body>
 </html>
-
