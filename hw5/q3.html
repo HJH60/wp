@@ -1,0 +1,50 @@
+<html>
+<body>
+<button>Button1</button>
+<script>
+function job1() {
+    
+    let w = window.innerWidth;
+    let h = window.innerHeight
+    if(left >= w){
+        left_status = 1
+        left -= 20
+    }else if(left <= 0 && left_status == 1){
+        left_status = 0
+    } 
+    if(top1 >= h){
+        top_status = 1
+        top1 -= 20
+    }else if(top1 <= 0 && top_status == 1){
+        top_status =0
+    }
+    if(left_status == 0){
+        left += 20
+    }else{
+        left -= 20
+    }
+    if(top_status == 0){
+        top1 += 20
+    }else{
+        top1 -= 20
+    }
+    // left += 20
+    // top1 += 20
+    b.style.left = left
+    b.style.top = top1
+    setTimeout(job1,100);
+}
+
+let left = 0
+let top1 = 0
+let left_status = 0
+let top_status = 0
+let b = document.querySelector('button')
+b.style.position = 'absolute'
+b.style.left = left
+b.style.top = top1
+job1()
+
+</script>
+</body>
+</html>
