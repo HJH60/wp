@@ -1,0 +1,29 @@
+<html>
+<style>
+input[type="text"] {
+    width: 500
+}
+</style>
+<body>
+<h1 style="text-align:center;">SHA256 Hash</h1>
+<form style="text-align:center;">
+<label>Enter Text</label><br>
+<input type="text" id="myText" name="myText" oninput="main()"><br>
+<label>Hash</label><br>
+<input type="text" id="hash" name="hash" disabled><br>
+</form>
+   
+<script src="sha.js"></script>
+<script>
+async function main() {
+    let inputText = document.getElementById('myText').value
+    let hex = await hash(inputText)
+    console.log(hex)
+    console.log(inputText)
+    document.getElementById('hash').value = hex
+}
+
+</script>
+
+</body>
+</html>
