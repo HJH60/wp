@@ -18,4 +18,4 @@
 ### 8. 請寫一個函數 gradient(f, p) 可以計算 f 在 p 點的梯度
 參考 Python程式碼改寫成JavaScript，但找不到複製陣列的語法，所以看解答後使用slice複製陣列
 
-- [原始碼]()
+- [原始碼](https://github.com/HJH60/wp/blob/master/hw4/gradient.js)
