@@ -1,4 +1,5 @@
 # 作業4：JavaScript 練習 2
+> 基於老師上課所講而寫出來的
 ### 1. 請寫一個 min(a,b) 函數傳回 a, b 裡較小的那個數字
 - [原始碼](https://github.com/HJH60/wp/blob/master/hw4/min.js)
 ### 2. 請寫一個 arrayMin(a) 函數傳回陣列 a 裡最小的那個數字

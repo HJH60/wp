@@ -1,0 +1,86 @@
+<html>
+<style>
+    body {
+        background-color: rgb(153, 185, 195);
+    }
+
+    .canvas {
+        border: 1px solid #000000;
+        display: block;
+        width: 600px;
+        height: 600px;
+        margin: 20px auto;
+    }
+
+    .button {
+        color: black;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <title>小畫家</title>
+    <h1 style="text-align: center;">小畫家</h1>
+    <div class="button">
+        <input type="color" value="#000000" id="color">
+        <button id="reset">Reset</button>
+    </div>
+    <canvas id="myCanvas" class="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        let painting = false;
+
+        const colorPicker = document.getElementById('color');
+        const resetButton = document.getElementById("reset");
+
+        canvas.width = 600;
+        canvas.height = 600;
+
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        canvas.addEventListener('mousedown', startPosition);
+        canvas.addEventListener('mouseup', endPosition);
+        canvas.addEventListener('mousemove', draw);
+
+        resetButton.addEventListener('click', resetCanvas);
+
+        function startPosition() {
+            painting = true;
+            draw(event); 
+        }
+
+        function endPosition() {
+            painting = false;
+            ctx.beginPath();
+        }
+
+        function draw(event) {
+            if (!painting) return;
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = colorPicker.value;
+
+            var rect = canvas.getBoundingClientRect();
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
+
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        }
+
+        function resetCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+
+</body>
+
+</html>
