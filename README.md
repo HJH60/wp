@@ -10,4 +10,4 @@
 課程教材 | https://github.com/ccc112b/html2denojs <br/> https://www.w3schools.com/
 
 ## [期中作業](project/Midterm/README.md)
-## [期末作業](/wp/project/Final/README.md)
+## [期末作業](project/Final/README.md)
