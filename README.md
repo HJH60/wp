@@ -9,5 +9,5 @@
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc112b/html2denojs <br/> https://www.w3schools.com/
 
-## (期中作業)[project/Midterm/README.md]
-## (期末作業)[]
+## [期中作業](project/Midterm/README.md)
+## [期末作業](/wp/project/Final/README.md)
