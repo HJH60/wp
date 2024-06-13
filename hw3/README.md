@@ -1,5 +1,5 @@
 # 作業3：JavaScript 基本練習
-> 基於老師上課所講而寫出來的
+> 基於老師上課所講，並參考老師的範例檔而寫出來的
 
 1. 先印出 -- Hello 你好！
 - [原始碼](https://github.com/HJH60/wp/blob/master/hw3/hello.js)

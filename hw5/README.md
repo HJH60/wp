@@ -1,5 +1,5 @@
 # 作業5：DOM 的 JavaScript 操控練習
-參考老師給的檔案
+> 基於老師上課所講，並參考老師的範例檔而寫出來的
 ### 1. 按鈕按下去寬高都會變大 10px
 - [原始碼](https://github.com/HJH60/wp/blob/master/hw5/q1.html)
 
