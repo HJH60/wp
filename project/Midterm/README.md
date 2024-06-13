@@ -13,3 +13,9 @@
 - [原始碼](travelRecord.html)
 
 - [網頁](https://hjh60.github.io/wp/project/Midterm/travelRecord.html)
+
+### My Pet
+使用[W3school的模板](https://www.w3schools.com/w3css/tryw3css_templates_photo.htm#)進行更改
+- [原始碼](mypet.html)
+
+- [網頁](https://hjh60.github.io/wp/project/Midterm/mypet.html)
