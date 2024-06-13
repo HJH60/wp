@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Earl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        img {
+            margin-bottom: -7px
+        }
+
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-content" style="max-width:1500px">
+        <div class="w3-opacity">
+            <header class="w3-center w3-margin-bottom">
+                <h1><b>EARL</b></h1>
+                <p><b>Some daily life of Earl.</b></p>
+                <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid
+                        Padding</button></p>
+            </header>
+        </div>
+        <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+            <div class="w3-third">
+                <img src="images/earl/1.JPG" style="width:100%">
+                <img src="images/earl/4.JPG" style="width:100%">
+                <img src="images/earl/7.JPG" style="width:100%">
+                <img src="images/earl/9.JPG" style="width:100%">
+                <img src="images/earl/12.JPG" style="width:100%">
+                <img src="images/earl/15.JPG" style="width:100%">
+                <img src="images/earl/19.JPG" style="width:100%">
+            </div>
+
+            <div class="w3-third">
+                <img src="images/earl/2.JPG" style="width:100%">
+                <img src="images/earl/5.JPG" style="width:100%">
+                <img src="images/earl/10.JPG" style="width:100%">
+                <img src="images/earl/13.JPG" style="width:100%">
+                <img src="images/earl/16.JPG" style="width:100%">
+                <img src="images/earl/18.JPG" style="width:100%">
+            </div>
+
+            <div class="w3-third">
+                <img src="images/earl/3.JPG" style="width:100%">
+                <img src="images/earl/6.JPG" style="width:100%">
+                <img src="images/earl/8.JPG" style="width:100%">
+                <img src="images/earl/11.PNG" style="width:100%">
+                <img src="images/earl/14.JPG" style="width:100%">
+                <img src="images/earl/17.JPG" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
