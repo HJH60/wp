@@ -2,20 +2,20 @@ import { DB } from "https://deno.land/x/sqlite/mod.ts";
 import { oFetch } from "./lib.js"
 
 export async function sqlHandler(ctx) {
-    const body = ctx.request.body; // content type automatically detected
-    if (body.type() === "json") {
+    const body = ctx.request.body; // content type automatically detected//對方傳來的訊息(POST)
+    if (body.type() === "json") {//預期型態為JSON
         let json = await body.json()
         console.log('json=', json)
-        let db = json.db
+        let db = json.db//預期有db,sql欄位
         let sql = json.sql
-        const dbo = new DB(`db/${db}.db`)
-        let result = sql ? dbo.query(sql) : '[]'
+        const dbo = new DB(`db/${db}.db`)//創建資料庫(blog.db)
+        let result = sql ? dbo.query(sql) : '[]'//執行資料庫指令curd(creat,update,read,delete)
         dbo.close()
         ctx.response.body = result
     }
 }
 
-export async function fetchHandler(ctx) {
+export async function fetchHandler(ctx) {//透過此伺服器抓別的網站時使用
     const body = ctx.request.body(); // content type automatically detected
     console.log('body = ', body)
     if (body.type === "json") {
@@ -27,7 +27,7 @@ export async function fetchHandler(ctx) {
     }
 }
 
-export async function uploadHandler(ctx) {
+export async function uploadHandler(ctx) {//上傳檔案
     const body = await ctx.request.body({ type: 'form-data' })
     const data = await body.value.read()
     console.log(data)
